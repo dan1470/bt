@@ -1,0 +1,17 @@
+#include <stdio.h>
+int Tong(int n) {
+    int tong=0;
+    for (int i=1; i<=n; ++i) 
+        tong+=i;
+    return tong;
+}
+
+int main() {
+    int n;
+    scanf("%d",&n);
+    if (n<=0) 
+        return 1;
+    int tong=Tong(n);
+    printf("%d\n",n,tong);
+    return 0;
+}
