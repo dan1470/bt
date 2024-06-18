@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <ctype.h> 
+int main() {
+    char tu[100];
+    scanf("%s", tu);
+    int i = 0;
+    while (tu[i] != '\0') {
+        tu[i] = toupper(tu[i]); 
+        i++;
+    }
+    printf("%s\n", tu);
+    return 0;
+}
